@@ -1,5 +1,5 @@
 import math
-print("Do you want area calculator or calculator")
+print("Do you want area calculator or area calculator")
 var1 = input()
 
 if var1 == "calculator":
@@ -27,8 +27,6 @@ if var1 == "calculator":
         x = int(input())
         if o == "square root":
             print(math.sqrt(x))
-        elif o == "cube root":
-            print(math.cbrt(x))
         elif o == "square":
             print(x*x)
 
