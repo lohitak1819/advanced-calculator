@@ -1,32 +1,48 @@
 import math
-print("Enter simple for simple calculator and advanced for advanced calculator")
+print("Do you want area calculator or calculator")
+var1 = input()
 
-calculator_type = str(input())
-
-if calculator_type == "simple":
-    print("Enter the first number")
-    a = int(input())
-    print("Enter the second number")
-    b = int(input())
-    print("Enter the operator")
-    operator = input()
-    if operator == "+":
-        print(a + b)
-    elif operator == "-":
-        print(a - b)
-    elif operator == "*":
-        print(a * b)
+if var1 == "calculator":
+    print("Enter simple for simple calculator or advanced for advanced calculator")
+    calculator_type = input()
+    if calculator_type == "simple":
+        print("Enter operator")
+        operator = input()
+        print("Enter the first number")
+        a = int(input())
+        print("Enter the second number")
+        b = int(input())
+        if operator == "+":
+            print(a + b)
+        elif operator == "-":
+            print(a - b)
+        elif operator == "*":
+            print(a*b)
+        else:
+            print(a/b)
     else:
-        print(a/b)
+        print("Enter square root or square")
+        o = input()
+        print("Enter the number")
+        x = int(input())
+        if o == "square root":
+            print(math.sqrt(x))
+        elif o == "cube root":
+            print(math.cbrt(x))
+        elif o == "square":
+            print(x*x)
 
 else:
-    print("Enter the nmber")
-    num = int(input())
-    print("Enter the operator square root or square")
-    advanced_operator = input()
-    if advanced_operator == "square root":
-        print(math.sqrt(num))
+    print("Enter the shape")
+    shape = input()
+    if shape == "square":
+        print("What is the side of square")
+        side_square = int(input())
+        print("The area of the square is")
+        print(side_square*side_square)
     else:
-        print(num*num)
-
-
+        print("Enter the breadth of the rectangle")
+        breadth_rectangle = int(input())
+        print("Enter the length of the rectangle")
+        length_rectangle = int(input())
+        print(breadth_rectangle*length_rectangle)
