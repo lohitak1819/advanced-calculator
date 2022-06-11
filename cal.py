@@ -21,7 +21,7 @@ if var1 == "calculator":
         else:
             print(a/b)
     else:
-        print("Enter square root,square or cube")
+        print("Enter square root,square,cube root or cube")
         o = input()
         print("Enter the number")
         x = int(input())
@@ -31,6 +31,8 @@ if var1 == "calculator":
             print(x*x*x)
         elif o == "square":
             print(x*x)
+        elif o == "cube root":
+            print(x **(1./3.))
 
 else:
     print("Enter the shape")
